@@ -1,0 +1,8 @@
+export PS1="\[\033[01;32m\]\u@docker\[\033[00m\][LOCAL]:\[\033[01;34m\]\w\[\033[00m\]\$ "
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+export FASTRTPS_DEFAULT_PROFILES_FILE=${DIR}/../.fastdds_local.xml
+export ROS_DOMAIN_ID=0
+export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+export ROS_LOCALHOST_ONLY=1
+echo "ROS2 connections restricted to localhost" >&2
+echo "FASTRTPS_DEFAULT_PROFILES_FILE=$FASTRTPS_DEFAULT_PROFILES_FILE"
