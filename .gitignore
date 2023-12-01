@@ -1,0 +1,3 @@
+*.pyc
+*.sw*
+.bash_history

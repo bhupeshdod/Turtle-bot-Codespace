@@ -1,0 +1,12 @@
+{
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/humble/local/lib/python3.10/dist-packages/"
+    ],
+    "python.pythonPath": "/usr/bin/python3",
+    "python.analysis.extraPaths": [
+        "/opt/ros/humble/local/lib/python3.10/dist-packages/"
+    ]
+}

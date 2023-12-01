@@ -1,0 +1,27 @@
+#!/bin/bash
+
+sudo rm -rf /opt/robohub/humble
+sudo chmod a+rw /opt/robohub
+
+source /opt/ros/humble/setup.bash
+
+set -v
+set -e
+
+cd /tmp
+
+rm -rf ws
+mkdir -p ws/src
+cd ws
+cd src
+
+mkdir -p ~/.ssh
+ssh-keyscan github.com >> ~/.ssh/known_hosts
+git clone https://${GITHUB_TOKEN}@github.com:UW-ECE699-Design/turtlebot4_wrapper.git
+git clone https://git.uwaterloo.ca/robohub/foxglove_bridge.git
+rosdep init && rosdep update && rosdep install -y --from-path .
+cd ..
+echo MAKEFLAGS=-j2 colcon build --install-base=/opt/robohub/humble --executor sequential --merge-install >> compile_ws.sh
+chmod +x compile_ws.sh
+./compile_ws.sh
+
