@@ -1,0 +1,10 @@
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/Pause.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/ClearQueue.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/ToggleInteractive.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/Clear.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/SaveMap.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/LoopClosure.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/MergeMaps.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/AddSubmap.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/DeserializePoseGraph.idl
+/workspaces/lab1/slamtoolbox/build/slam_toolbox/rosidl_adapter/slam_toolbox:srv/SerializePoseGraph.idl

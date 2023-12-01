@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/lab1/gmapping/build/gmapping': /usr/bin/cmake /workspaces/lab1/gmapping/slam_gmapping/gmapping -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/workspaces/lab1/gmapping/install/gmapping
+Invoked command in '/workspaces/lab1/gmapping/build/gmapping' returned '1': /usr/bin/cmake /workspaces/lab1/gmapping/slam_gmapping/gmapping -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/workspaces/lab1/gmapping/install/gmapping

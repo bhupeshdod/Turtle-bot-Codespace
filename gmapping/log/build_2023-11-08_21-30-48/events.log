@@ -1,0 +1,54 @@
+[0.000000] (-) TimerEvent: {}
+[0.004314] (gmapping) JobQueued: {'identifier': 'gmapping', 'dependencies': OrderedDict()}
+[0.004508] (slam_gmapping) JobQueued: {'identifier': 'slam_gmapping', 'dependencies': OrderedDict([('gmapping', '/workspaces/lab1/gmapping/install/gmapping')])}
+[0.004679] (gmapping) JobStarted: {'identifier': 'gmapping'}
+[0.021791] (gmapping) JobProgress: {'identifier': 'gmapping', 'progress': 'cmake'}
+[0.021863] (gmapping) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/lab1/gmapping/slam_gmapping/gmapping', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCATKIN_SYMLINK_INSTALL=ON', '-DCMAKE_INSTALL_PREFIX=/workspaces/lab1/gmapping/install/gmapping'], 'cwd': '/workspaces/lab1/gmapping/build/gmapping', 'env': OrderedDict([('GITHUB_TOKEN', 'ghu_lprQudOQ4D8toYLacd7wXUqKJumrLz3JK9Xk'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('GITHUB_CODESPACE_TOKEN', 'BDC6K3TKOCPI2CAUXAGSDGLFJSJL5ANCNFSM4AFMYXIQ'), ('HOSTNAME', 'codespaces-67740e'), ('GIT_ASKPASS', '/vscode/bin/linux-x64/2b35e1e6d88f1ce073683991d1eff5284a32690f/extensions/git/dist/askpass.sh'), ('GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN', 'app.github.dev'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/robohub/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/bin/linux-x64/2b35e1e6d88f1ce073683991d1eff5284a32690f/bin/helpers/browser.sh'), ('HOME', '/home/robohub'), ('OLDPWD', '/workspaces/lab1'), ('TERM_PROGRAM_VERSION', '1.84.1'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-69bf905b-fac6-4be9-975d-378511dd6264.sock'), ('CODESPACES', 'true'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/bin/linux-x64/2b35e1e6d88f1ce073683991d1eff5284a32690f/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\[\\033[01;32m\\]\\u@docker\\[\\033[00m\\][LOCAL]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/bin/linux-x64/2b35e1e6d88f1ce073683991d1eff5284a32690f/node'), ('COLORTERM', 'truecolor'), ('GITHUB_USER', 'AshwinKuriakose5'), ('GITHUB_GRAPHQL_URL', 'https://api.github.com/graphql'), ('COLCON_PREFIX_PATH', '/opt/robohub/humble'), ('ROS_DISTRO', 'humble'), ('ContainerVersion', '13'), ('GITHUB_API_URL', 'https://api.github.com'), ('RepositoryName', 'lab1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLOUDENV_ENVIRONMENT_ID', '2c6055bd-4936-42e4-aa4e-8d807d9d2928'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/workspaces/lab1/.bin:/vscode/bin/linux-x64/2b35e1e6d88f1ce073683991d1eff5284a32690f/bin/remote-cli:/workspaces/lab1/.bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/workspaces/lab1/.bin/../.fastdds_local.xml'), ('SHELL_LOGGED_IN', 'true'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/vscode-git-7f77660df5.sock'), ('GITHUB_REPOSITORY', 'UW-ECE699-Design/lab1'), ('TERM_PROGRAM', 'vscode'), ('ROS_DOMAIN_ID', '0'), ('AMENT_PREFIX_PATH', '/opt/robohub/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('PROMPT_COMMAND', '__vsc_prompt_cmd_original'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/lab1/gmapping/build/gmapping'), ('INTERNAL_VSCS_TARGET_URL', 'https://eastus.online.visualstudio.com'), ('LC_ALL', 'C.UTF-8'), ('GITHUB_SERVER_URL', 'https://github.com'), ('PYTHONPATH', '/opt/robohub/humble/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('CODESPACE_NAME', 'zany-space-parakeet-695gp4xqr67356q5'), ('HISTFILE', '/workspaces/lab1/.bash_history'), ('CODESPACE_VSCODE_FOLDER', '/workspaces/lab1'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/robohub/humble')]), 'shell': False}
+[0.037311] (gmapping) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.037484] (gmapping) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.037596] (gmapping) StderrLine: {'line': b'  CMake.\n'}
+[0.037700] (gmapping) StderrLine: {'line': b'\n'}
+[0.037799] (gmapping) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.037908] (gmapping) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.038016] (gmapping) StderrLine: {'line': b'\n'}
+[0.041333] (gmapping) StderrLine: {'line': b'\x1b[0m\n'}
+[0.092033] (-) TimerEvent: {}
+[0.109386] (gmapping) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.3.0\n'}
+[0.183963] (gmapping) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.3.0\n'}
+[0.192117] (-) TimerEvent: {}
+[0.195286] (gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.292236] (-) TimerEvent: {}
+[0.294592] (gmapping) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.313899] (gmapping) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.314712] (gmapping) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.316031] (gmapping) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.322556] (gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.392344] (-) TimerEvent: {}
+[0.442753] (gmapping) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.457617] (gmapping) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.458429] (gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.459001] (gmapping) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.483593] (gmapping) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:4 (find_package):\n'}
+[0.486162] (gmapping) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.486348] (gmapping) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[0.487766] (gmapping) StderrLine: {'line': b'  CMake did not find one.\n'}
+[0.487932] (gmapping) StderrLine: {'line': b'\n'}
+[0.488219] (gmapping) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[0.488422] (gmapping) StderrLine: {'line': b'  of the following names:\n'}
+[0.488575] (gmapping) StderrLine: {'line': b'\n'}
+[0.488720] (gmapping) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[0.488868] (gmapping) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[0.489023] (gmapping) StderrLine: {'line': b'\n'}
+[0.489171] (gmapping) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[0.489317] (gmapping) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[0.489471] (gmapping) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[0.489615] (gmapping) StderrLine: {'line': b'  installed.\n'}
+[0.489757] (gmapping) StderrLine: {'line': b'\n'}
+[0.489899] (gmapping) StderrLine: {'line': b'\x1b[0m\n'}
+[0.490052] (gmapping) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.490201] (gmapping) StdoutLine: {'line': b'See also "/workspaces/lab1/gmapping/build/gmapping/CMakeFiles/CMakeOutput.log".\n'}
+[0.491635] (gmapping) CommandEnded: {'returncode': 1}
+[0.492408] (-) TimerEvent: {}
+[0.533114] (gmapping) JobEnded: {'identifier': 'gmapping', 'rc': 1}
+[0.534858] (slam_gmapping) JobSkipped: {'identifier': 'slam_gmapping'}
+[0.534909] (-) EventReactorShutdown: {}
